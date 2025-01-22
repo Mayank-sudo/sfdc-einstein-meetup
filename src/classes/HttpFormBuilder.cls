@@ -85,6 +85,7 @@ public class HttpFormBuilder {
         string valueCrLf = value + '\r\n';
         blob valueCrLfBlob = blob.valueOf(valueCrLf);
         string valueCrLf64 = EncodingUtil.base64Encode(valueCrLfBlob);
+        
 
         content += SafelyPad(value, valueCrLf64, '\r\n');
 
